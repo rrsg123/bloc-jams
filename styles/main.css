@@ -102,4 +102,12 @@ html { font-size: 112%; }
 html { font-size: 120%; }
 }
 
+.clearfix::before,
+.clearfix::after {
+	content: " ";
+        display: table;
+ }
 
+.clearfix::after {
+         clear: both;
+	 }
